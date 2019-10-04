@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+  <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+  <link rel="stylesheet" href="assets/css/Navigation-styles.css">
+  <link rel="stylesheet" href="assets/css/My-account.css">
+</head>
+
+<body>
+
+  <nav id="menu" class="navbar navbar-light navbar-expand-md navigation-clean-search">
+    <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo_nav.png" width="140"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <ul class="nav navbar-nav">
+          <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="allframes.html">All Frames</a></li>
+        </ul>
+        <a class="btn btn-light float-right ml-auto action-button" role="button" href="login.html">Log In/Sign Up</a>
+      </div>
+      <div>
+
+        <!--cart icon-->
+        <button id="popover" type="button" class="btn" data-popover-content="#a1" data-container="body" data-toggle="popover" data-placement="bottom" data-content="">
+           <img src="assets/img/icon_shoppingcart.png">
+           <span id="cartBadgeNum" class="badge">0</span>
+        </button>
+
+        <!--shopping-cart popover container -->
+        <div style="display: none" id="a1">
+          <div id="popoverHeading" class="popover-heading">
+            This is the heading for #1
+          </div>
+          <div class="popover-body">
+            <table class="table table-condensed">
+              <tbody id="popoverBody"></tbody>
+            </table>
+            <a href="cart.html" class="button-checkout">View Cart</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <div id="main-content">
+    <div class="product-boxed">
+      <div class="container">
+
+
+        <div class="row">
+          <!--Account Info-->
+          <div class="col-md-4 item">
+            <div>
+              <h4>My Account</h4>
+              <h5>Jonh, Welcome back!</h5>
+            </div>
+            <div>
+              <h6>
+              Email:
+              </h6>
+              <p>jonhsmith@gmail.com
+              </p>
+            </div>
+            <!--div>
+              <h6>
+              Shipping address:
+              </h6>
+              <p>Jonh Smith<br>100 Main St APT 14
+                <br>WEST LAFAYETTE, IN 47906-3354
+                <br>United States
+                <br><a class="edit_link" href="#">Delete</a>
+              </p>
+            </div>
+            <div>
+              <h6>
+              Payment Method:
+              </h6>
+              <p>
+                Visa ending in 1234
+                <br><a class="edit_link" href="#">Delete</a>
+              </p>
+            </div-->
+          </div>
+
+          <!--Order List-->
+          <div class="col-md-8 item">
+            <div>
+              <h6>
+              Order List:
+              </h6>
+
+          
+
+              <div class="form-group form-inline">
+                <label class="order-time" for="name">orders placed in&nbsp;&nbsp;</label>
+                <select class="form-control order-time">
+                  <option>past 3 months</option>
+                  <option>past 6 months</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                </select>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-condensed order-table table-sm table-hover">
+                  <caption></caption>
+                  <thead>
+                    <tr>
+                      <th>Order #</th>
+                      <th>Order Date</th>
+                      <th>Total:</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a class="order_num" href="#">114-8397760</a></td>
+                      <td>February 22, 2018</td>
+                      <td>$17.08</td>
+                    </tr>
+                    <tr>
+                      <td><a class="order_num" href="#">114-8397760</a></td>
+                      <td>February 22, 2018</td>
+                      <td>$17.08</td>
+                    </tr>
+                    <tr>
+                      <td><a class="order_num" href="#">114-8397760</a></td>
+                      <td>February 22, 2018</td>
+                      <td>$17.08</td>
+                    </tr>
+                    <tr>
+                      <td><a class="order_num" href="#">114-8397760</a></td>
+                      <td>February 22, 2018</td>
+                      <td>$17.08</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="footer-clean">
+    <header></header>
+
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-3 item">
+            <h3><a href="index.html" style="color: #333333;">Home</a></h3>
+            <h3><a href="myaccount.html" style="color: #333333;">Your Account</a></h3>
+            <h3><a href="about.html" style="color: #333333;">About Us</a></h3>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3><a style="color: #333333;" href="allframes.html">All Frames</a></h3>
+            <ul>
+              <li><a>Wall Frames</a></li>
+              <li><a>Tabletop Frames</a></li>
+              <li><a>Frame Sets</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><a href="hi@weframeu.com"><b>Email:</b> hi@weframeu.com</a></li>
+              <li><b>Address: </b>123 Main St. <br>Detroit MI 48216 </li>
+              <li><b>Phone:</b> (000)000-0000</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+            <p class="copyright">WeFrameU.com © 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/public.js"></script>
+  <script type="text/javascript" src="assets/js/myaccount.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.dropdown .dd-button, .dropdown .dd-button:active {
+  background: #cecece;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #383838 !important;
+  box-shadow: none;
+  border: none;
+  text-shadow: none;
+  padding: 6px 16px;
+  transition: background-color 0.25s;
+  margin: 10px 10px 0 10px;
+}
+
+.dropdown .dd-button:hover, .dropdown .dd-button:focus {
+  background: #bcbcbc;
+}
+
+.dropdown {
+  padding: 10px 0;
+}
+
+
+.all-frames-body{
+  margin-top: 10px;
+}

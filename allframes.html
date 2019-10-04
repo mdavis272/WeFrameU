@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Frames</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+  <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+  <link rel="stylesheet" href="assets/css/Navigation-styles.css">
+  <link rel="stylesheet" href="assets/css/Home-Boxed.css">
+  <link rel="stylesheet" href="assets/css/Frames-dropdown-button.css">
+</head>
+
+<body>
+  <nav id="menu" class="navbar navbar-light navbar-expand-md navigation-clean-search">
+    <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo_nav.png" width="140"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <ul class="nav navbar-nav">
+          <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link active" href="allframes.html">All Frames</a></li>
+        </ul>
+        <a class="btn btn-light float-right ml-auto action-button" role="button" href="login.html">Log In/Sign Up</a>
+      </div>
+      <div>
+
+        <!--cart icon-->
+        <button id="popover" type="button" class="btn" data-popover-content="#a1" data-container="body" data-toggle="popover" data-placement="bottom" data-content="">
+           <img src="assets/img/icon_shoppingcart.png">
+           <span id="cartBadgeNum" class="badge">0</span>
+	      </button>
+
+        <!--shopping-cart popover container -->
+        <div style="display: none" id="a1">
+          <div id="popoverHeading" class="popover-heading">
+            This is the heading for #1
+          </div>
+          <div class="popover-body">
+            <table class="table table-condensed">
+              <tbody id="popoverBody"></tbody>
+            </table>
+            <a href="cart.html" class="button-checkout">View Cart</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <div>
+    <div class="home-boxed">
+      <div class="container">
+
+        <!--dropdown buttons-->
+        <div class="row">
+
+
+
+
+
+          <div id="tableDiv1" class="dropdown">
+            <button id="tableButton1" class="btn btn-primary dropdown-toggle dd-button" type="button" data-toggle="dropdown">
+              All Frames
+              <span class="caret"></span>
+            </button>
+            <div id="tableMenu1" class="dropdown-menu">
+              <a class="dropdown-item" href="#">All Frames</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Wall Frames</a>
+              <a class="dropdown-item" href="#">Tabletop Frames</a>
+              <a class="dropdown-item" href="#">Frame Sets</a>
+            </div>
+          </div>
+
+          <div id="tableDiv2" class="dropdown">
+            <button id="tableButton2" class="btn btn-primary dropdown-toggle dd-button" type="button" data-toggle="dropdown">
+              Size
+              <span class="caret"></span>
+            </button>
+            <div id="tableMenu2" class="dropdown-menu">
+              <a class="dropdown-item" href="#">All size</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">3"x5"</a>
+              <a class="dropdown-item" href="#">5"x7"</a>
+              <a class="dropdown-item" href="#">8"x11"</a>
+              <a class="dropdown-item" href="#">11"x14"</a>
+              <a class="dropdown-item" href="#">16"x20"</a>
+            </div>
+          </div>
+
+          <div id="tableDiv3" class="dropdown">
+            <button id="tableButton3" class="btn btn-primary dropdown-toggle dd-button" type="button" data-toggle="dropdown">
+              Material
+              <span class="caret"></span>
+            </button>
+            <div id="tableMenu3" class="dropdown-menu">
+              <a class="dropdown-item" href="#">All Material</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Wood</a>
+              <a class="dropdown-item" href="#">Glass</a>
+              <a class="dropdown-item" href="#">Metal</a>
+              <a class="dropdown-item" href="#">Plastic</a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="product-boxed">
+              <div class="row">
+                <div class="col-md-6 item">
+                  <img id="modalImg" src="assets/img/wall1.png" width=100%>
+                </div>
+                <div class="col-md-6 item">
+                  <h5 id="modalName" class="name">Wall Frame01</h5>
+                  <p id="modalPrice" class="title">$15-$25</p>
+                  <div class="form-group">
+                    <form id="productForm">
+                      <h6>Size: <span id="sizeTip" style='color:#b7ad2e;'></span></h6>
+                      <input id="modalSize1" value="radio1" type="radio" name="size">
+                      <label id="modalSizeLa1" for="modalSize1" class="radio-inline">
+                        0"x0"
+                      </label>
+                      <input id="modalSize2" value="radio2" type="radio" name="size">
+                      <label id="modalSizeLa2" for="modalSize2" class="radio-inline">
+                        0"x0"
+                      </label>
+                      <input id="modalSize3" value="radio3" type="radio" name="size">
+                      <label id="modalSizeLa3" for="modalSize3" class="radio-inline">
+                        0"x0"
+                      </label>
+                      <hr>
+                    </form>
+
+                    <form>
+                      <label><input id="modalMessageCheck" type="checkbox" name="personalization"> Personalization</label>
+                      <p class="description">$2 for the first 5 letters; each additional letter costs a penny</p>
+                      <textarea form="myProductForm" name="message" class="form-control" rows="2" id="modalMessage" placeholder="Your message"></textarea>
+
+
+
+                      <label class="qty-text" for="sel1">Qty:&nbsp;&nbsp;</label>
+                      <select form="myProductForm" name="qty" class="form-control qty-number" id="modalQty">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                              <option>16</option>
+                              <option>17</option>
+                              <option>18</option>
+                              <option>19</option>
+                              <option>20</option>
+                            </select>
+                      <a id="productFormBtn" class="btn-light btn action-button" role="button" href="#">Add to Cart</a>
+                  </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 item">
+                  <p class="name">About this item</p>
+                  <p class="description">Perfect for decorating your home or dorm, this poster frame fits a photo, poster, or art print. The 2 1/2" frame in black finish gives the poster frame a sophisticated look that will add style to any room. The hinged sawtooth hangers
+                    make it easy to display horizontally or vertically and the plexi-glass cover will keep your poster protected.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Wall Frames-->
+        <div class="row all-frames-body">
+
+          <div id="f1" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg1" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname1" class="name">Wall Frame01</h5>
+              <p id="fprice1" class="price">$10</p>
+              <a id="myBtn1" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+
+          <div id="f2" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg2" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname2" class="name">Wall Frame01</h5>
+              <p id="fprice2" class="price">$10</p>
+              <a id="myBtn2" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+
+          <div id="f3" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg3" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname3" class="name">Wall Frame01</h5>
+              <p id="fprice3" class="price">$10</p>
+              <a id="myBtn3" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+
+          <div id="f4" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg4" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname4" class="name">Wall Frame01</h5>
+              <p id="fprice4" class="price">$10</p>
+              <a id="myBtn4" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+
+          <div id="f5" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg5" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname5" class="name">Wall Frame01</h5>
+              <p id="fprice5" class="price">$10</p>
+              <a id="myBtn5" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+
+          <div id="f6" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg6" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname6" class="name">Wall Frame01</h5>
+              <p id="fprice6" class="price">$10</p>
+              <a id="myBtn6" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+
+          <div id="f7" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg7" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname7" class="name">Wall Frame01</h5>
+              <p id="fprice7" class="price">$10</p>
+              <a id="myBtn7" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+
+          <div id="f8" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg8" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname8" class="name">Wall Frame01</h5>
+              <p id="fprice8" class="price">$10</p>
+              <a id="myBtn8" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+
+          <div id="f9" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg9" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname9" class="name">Wall Frame01</h5>
+              <p id="fprice9" class="price">$10</p>
+              <a id="myBtn9" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+          <div id="f10" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg10" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname10" class="name">Wall Frame01</h5>
+              <p id="fprice10" class="price">$10</p>
+              <a id="myBtn10" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+          <div id="f11" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg11" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname11" class="name">Wall Frame01</h5>
+              <p id="fprice11" class="price">$10</p>
+              <a id="myBtn11" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+          <div id="f12" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg12" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname12" class="name">Wall Frame01</h5>
+              <p id="fprice12" class="price">$10</p>
+              <a id="myBtn12" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+          <div id="f13" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg13" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname13" class="name">Wall Frame01</h5>
+              <p id="fprice13" class="price">$10</p>
+              <a id="myBtn13" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+          <div id="f14" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg14" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname14" class="name">Wall Frame01</h5>
+              <p id="fprice14" class="price">$10</p>
+              <a id="myBtn14" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+          <div id="f15" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg15" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname15" class="name">Wall Frame01</h5>
+              <p id="fprice15" class="price">$10</p>
+              <a id="myBtn15" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+          <div id="f16" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg16" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname16" class="name">Wall Frame01</h5>
+              <p id="fprice16" class="price">$10</p>
+              <a id="myBtn16" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+
+
+          <div id="f17" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg17" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname17" class="name">Wall Frame01</h5>
+              <p id="fprice17" class="price">$10</p>
+              <a id="myBtn17" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+          <div id="f18" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg18" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname18" class="name">Wall Frame01</h5>
+              <p id="fprice18" class="price">$10</p>
+              <a id="myBtn18" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+          <div id="f19" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg19" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname19" class="name">Wall Frame01</h5>
+              <p id="fprice19" class="price">$10</p>
+              <a id="myBtn19" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+          <div id="f20" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item">
+            <div class="box"><img id="fimg20" src="assets/img/frames/f1.jpg" width=100%>
+              <h5 id="fname20" class="name">Wall Frame01</h5>
+              <p id="fprice20" class="price">$10</p>
+              <a id="myBtn20" class="btn-light btn action-button" role="button" href="#">View</a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="footer-clean">
+    <header></header>
+
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-3 item">
+            <h3><a href="index.html" style="color: #333333;">Home</a></h3>
+            <h3><a href="myaccount.html" style="color: #333333;">Your Account</a></h3>
+            <h3><a href="about.html" style="color: #333333;">About Us</a></h3>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3><a style="color: #333333;" href="allframes.html">All Frames</a></h3>
+            <ul>
+              <li><a>Wall Frames</a></li>
+              <li><a>Tabletop Frames</a></li>
+              <li><a>Frame Sets</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><a href="hi@weframeu.com"><b>Email:</b> hi@weframeu.com</a></li>
+              <li><b>Address: </b>123 Main St. <br>Detroit MI 48216 </li>
+              <li><b>Phone:</b> (000)000-0000</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+            <p class="copyright">WeFrameU.com © 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/public.js"></script>
+  <script type="text/javascript" src="assets/js/home.js"></script>
+  <script type="text/javascript" src="assets/js/cart.js"></script>
+  <script type="text/javascript" src="assets/js/allframes.js"></script>
+</body>
+
+</html>

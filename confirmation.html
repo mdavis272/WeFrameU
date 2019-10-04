@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+  <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+  <link rel="stylesheet" href="assets/css/Navigation-styles.css">
+  <link rel="stylesheet" href="assets/css/Order-detail.css">
+  <link rel="stylesheet" href="assets/css/Cart.css">
+</head>
+
+<body>
+  <nav id="menu" class="navbar navbar-light navbar-expand-md navigation-clean-search">
+    <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo_nav.png" width="140"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <ul class="nav navbar-nav">
+          <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="allframes.html">All Frames</a></li>
+        </ul>
+        <a class="btn btn-light float-right ml-auto action-button" role="button" href="login.html">Log In/Sign Up</a>
+      </div>
+      <div>
+
+        <!--cart icon-->
+        <button id="popover" type="button" class="btn" data-popover-content="#a1" data-container="body" data-toggle="popover" data-placement="bottom" data-content="">
+           <img src="assets/img/icon_shoppingcart.png">
+           <span id="cartBadgeNum" class="badge">0</span>
+        </button>
+
+        <!--shopping-cart popover container -->
+        <div style="display: none" id="a1">
+          <div id="popoverHeading" class="popover-heading">
+            This is the heading for #1
+          </div>
+          <div class="popover-body">
+            <table class="table table-condensed">
+              <tbody id="popoverBody"></tbody>
+            </table>
+            <a href="cart.html" class="button-checkout">View Cart</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <div id="main-content">
+    <div class="product-boxed">
+      <div class="container">
+
+
+          <div class="row item">
+            <div class="col-md-8 item">
+              <h4>Thank you for your order.</h4>
+              <!--
+            <h5>Order # 114-8397760</h5>
+            -->
+              <p><b>Ordered on: </b><span id="order-date"> February 22, 2018</span></p>
+            </div>
+          </div>
+
+            <div class="row item">
+              <div class="col-md-8 item">
+
+                <!--cart Table-->
+                <div class="table-responsive">
+                  <table class="table table-condensed cart-table">
+                    <caption></caption>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Product</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody id="cartTableBody">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-md-4 item">
+                <div id="shipping-address"></div>
+                <div>
+                  <button type="submit" class="btn-light btn back-button" id="to-account">Your Account</button>
+                </div>
+              </div>
+            </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-clean">
+      <header></header>
+
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-3 item">
+              <h3><a href="index.html" style="color: #333333;">Home</a></h3>
+              <h3><a href="myaccount.html" style="color: #333333;">Your Account</a></h3>
+              <h3><a href="about.html" style="color: #333333;">About Us</a></h3>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3><a style="color: #333333;" href="allframes.html">All Frames</a></h3>
+              <ul>
+                <li><a>Wall Frames</a></li>
+                <li><a>Tabletop Frames</a></li>
+                <li><a>Frame Sets</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><a href="hi@weframeu.com"><b>Email:</b> hi@weframeu.com</a></li>
+                <li><b>Address: </b>123 Main St. <br>Detroit MI 48216 </li>
+                <li><b>Phone:</b> (000)000-0000</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+              <p class="copyright">WeFrameU.com © 2018</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/public.js"></script>
+    <script type="text/javascript" src="assets/js/confirmation.js"></script>
+
+</body>
+
+</html>

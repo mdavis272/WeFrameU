@@ -1,0 +1,229 @@
+@media (max-width:767px) {
+  .home-boxed h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+
+}
+
+/***************
+/*************** Product boxes */
+.home-boxed {
+  color:#313437;
+  background-color:#eef4f7;
+  padding-top: 75px;
+}
+
+.home-boxed p {
+  color:#7d8285;
+}
+
+
+.home-boxed .item {
+  text-align:center;
+}
+
+.home-boxed .item .box {
+  text-align:center;
+  padding:20px;
+  background-color:#fff;
+  margin:0 0 30px 0;
+}
+
+.home-boxed .item .name {
+  font-weight:bold;
+  margin-top:28px;
+  margin-bottom:8px;
+  color:inherit;
+  font-size: 18px;
+}
+
+.home-boxed .item .price {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#d0d0d0;
+  letter-spacing:2px;
+  font-size:13px;
+}
+
+.home-boxed .item img {
+  max-width:160px;
+}
+
+.home-boxed .action-button, .home-boxed .action-button:active {
+  background:#b7ad2e;
+  border-radius:20px;
+  font-size:13px;
+  color:#fff !important;
+  box-shadow:none;
+  border:none;
+  text-shadow:none;
+  padding:6px 16px;
+  transition:background-color 0.25s;
+}
+
+.home-boxed .action-button:hover, .home-boxed .action-button:focus {
+  background:#a0982e;
+}
+
+/***************
+/*************** col-xs-6 for Product boxes */
+.col-xs-6{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  width: 50%;
+}
+
+/***************
+/*************** The Product  Modal */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 75px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    border: 1px solid #888;
+    width: 90%;
+    margin: auto;
+}
+
+#modalMessage{
+  display: none; /* Hidden by default */
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float:right;
+    font-size: 50px;
+    font-weight: bold;
+    margin:10px 20px 0 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/***************
+/*************** The product detail */
+
+
+.product-boxed p {
+  color:#7d8285;
+}
+
+.product-boxed h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+.product-boxed{
+  padding:30px;
+}
+.product-boxed .item {
+  text-align:left;
+  margin:0px;
+}
+
+
+.product-boxed .item .name {
+  font-weight:bold;
+  margin-top:0px;
+  margin-bottom:8px;
+  color:#262626;
+}
+
+.product-boxed .item .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#808080;
+  letter-spacing:2px;
+  font-size:22px;
+}
+
+.product-boxed .item .description {
+  font-size:15px;
+  margin-top:0px;
+  margin-bottom:10px;
+}
+
+.product-boxed .item img {
+  max-width:360px;
+  align-items: center;
+  margin-top:-36px;
+}
+
+
+
+.product-boxed .action-button, .product-boxed .action-button:active {
+  background:#b7ad2e;
+  border-radius:20px;
+  font-size:inherit;
+  color:#fff !important;
+  box-shadow:none;
+  border:none;
+  text-shadow:none;
+  padding:8px 20px;
+  transition:background-color 0.25s;
+  margin:0 0 10px 0;
+}
+
+.product-boxed .action-button:hover, .product-boxed .action-button:focus {
+  background:#a0982e;
+}
+
+
+.product-boxed .radio-inline{
+  color:#7d8285;
+  margin:0px 20px 20px 0;
+  padding-top:0px;
+  color:inherit;
+  font-size:14px;
+}
+
+.product-boxed hr{
+  margin:0 0 5px 0;
+}
+
+.product-boxed .qty-number{
+  margin:0 30px 10px 0;
+  width: inherit;
+  height: inherit;
+}
+
+.product-boxed .qty-text{
+  margin:0 0 10px 0;
+  width: inherit;
+  height: inherit;
+}
+
+
+.product-boxed .item .description-a {
+  font-size:15px;
+  margin-top:0px;
+  margin-bottom:10px;
+  color:#7d8285;
+}

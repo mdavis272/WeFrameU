@@ -1,0 +1,96 @@
+.product-boxed {
+  color:#313437;
+  background-color:#eef4f7;
+}
+
+@media (max-width:767px) {
+  .cart-table img{
+    width: 40px;
+  }
+}
+
+
+.product-boxed .item {
+  text-align:left;
+  padding:10px 20px 0 20px;
+  background-color:#fff;
+  margin-top:0px;
+}
+
+.product-boxed .item .name {
+  font-weight:bold;
+  margin-top:0px;
+  margin-bottom:8px;
+  color:#262626;
+}
+
+.product-boxed .item .price_table {
+  color:#262626;
+  font-size:16px;
+}
+
+.product-boxed .item h5 {
+  color:#333333;
+  font-size:18px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.paymentTitle{
+    margin-top: 40px;
+}
+
+
+.product-boxed .action-button, .product-boxed .action-button:active {
+  background:#b7ad2e;
+  border-radius:20px;
+  font-size:inherit;
+  color:#fff !important;
+  box-shadow:none;
+  border:none;
+  text-shadow:none;
+  padding:8px 40px;
+  transition:background-color 0.25s;
+  margin:10px 0 0 0;
+}
+
+.product-boxed .action-button:hover, .product-boxed .action-button:focus {
+  background:#a0982e;
+}
+
+.product-boxed .back-button, .product-boxed .back-button:active {
+  background:#fff;
+  border-radius:30px;
+  border-color: #b7ad2e;
+  border-width:medium;
+  font-size:inherit;
+  color:#b7ad2e !important;
+  box-shadow:none;
+  border-collapse: separate;
+  text-shadow:none;
+  padding:6px 0px 6px 0px;
+  transition:background-color 0.25s;
+  margin:10px 0 0 0;
+  width: 165px;
+
+}
+
+.product-boxed .back-button, .product-boxed .back-button:focus {
+  background:#fff;
+}
+
+.submitBtn{
+  border-radius:20px;
+  padding:3px 26px;
+  margin-right: 10px;
+}
+
+#card-btn{
+  margin-top: 20px;
+}
+
+.credit-card-div  span { padding-top:10px; }
+.credit-card-div img { padding-top:30px; }
+.credit-card-div .small-font { font-size:9px; }
+.credit-card-div .pad-adjust { padding-top:10px; }

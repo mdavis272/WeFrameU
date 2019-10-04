@@ -1,0 +1,124 @@
+.product-boxed {
+  color:#313437;
+  background-color:#eef4f7;
+}
+
+.product-boxed p {
+  color:#7d8285;
+}
+
+.product-boxed h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .product-boxed h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+
+.product-boxed .item {
+  text-align:left;
+  padding:30px;
+  background-color:#fff;
+  margin-top:0px;
+}
+
+.product-boxed .item .name {
+  font-weight:bold;
+  margin-top:0px;
+  margin-bottom:8px;
+  color:#262626;
+}
+
+.product-boxed .item .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#808080;
+  letter-spacing:2px;
+  font-size:22px;
+}
+
+.product-boxed .item .description {
+  font-size:15px;
+  margin-top:0px;
+  margin-bottom:10px;
+}
+
+.product-boxed .item img {
+  max-width:360px;
+  align-items: center;
+}
+
+.product-boxed .social {
+  font-size:18px;
+  color:#a2a8ae;
+}
+
+.product-boxed .social a {
+  color:inherit;
+  margin:0 10px;
+  display:inline-block;
+  opacity:0.7;
+}
+
+.product-boxed .social a:hover {
+  opacity:1;
+}
+
+
+.product-boxed .action-button, .product-boxed .action-button:active {
+  background:#b7ad2e;
+  border-radius:20px;
+  font-size:inherit;
+  color:#fff !important;
+  box-shadow:none;
+  border:none;
+  text-shadow:none;
+  padding:8px 20px;
+  transition:background-color 0.25s;
+  margin:0 0 10px 0;
+}
+
+.product-boxed .action-button:hover, .product-boxed .action-button:focus {
+  background:#a0982e;
+}
+
+
+.product-boxed .radio-inline{
+  color:#7d8285;
+  margin:0px 20px 20px 0;
+  padding-top:0px;
+  color:inherit;
+  font-size:14px;
+}
+
+.product-boxed hr{
+  margin:0 0 5px 0;
+}
+
+.product-boxed .qty-number{
+  margin:0 30px 10px 0;
+  width: inherit;
+  height: inherit;
+}
+
+.product-boxed .qty-text{
+  margin:0 0 10px 0;
+  width: inherit;
+  height: inherit;
+}
+
+
+.product-boxed .item .description-a {
+  font-size:15px;
+  margin-top:0px;
+  margin-bottom:10px;
+  color:#7d8285;
+}
